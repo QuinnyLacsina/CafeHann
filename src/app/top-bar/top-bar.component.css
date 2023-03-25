@@ -1,0 +1,13 @@
+h1 {
+  font-size: 50px;
+}
+
+div {
+  display: flex;
+}
+
+div img {
+  height: 4rem;
+  width: 8rem;
+  margin-right: -2rem;
+}

@@ -1,0 +1,18 @@
+<h1 class="my-4 text-center">Coffee</h1>
+
+<div *ngFor="let product of products" class="container">
+  <!--container css-->
+  <a [title]="product.name + ' details'">
+    <img [src]="product.images" class="pic" />
+  </a>
+
+  <div class="d-flex justify-content-between mt-3">
+    <div>
+      <a [title]="product.name + ' details'"
+        ><h3>{{ product.name }}</h3></a
+      >
+      <p *ngIf="product.description">{{ product.description }}</p>
+      <button type="button" (click)="share()">Buy Now</button>
+    </div>
+  </div>
+</div>

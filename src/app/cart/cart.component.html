@@ -1,0 +1,37 @@
+<div class="orderform">
+  <h2 style="text-align:center;">Product Order Form</h2>
+</div>
+<div class="container">
+  <div class="d-flex">
+    <form action="" method="">
+      <label>
+        <span class="fname">First Name <span class="required">*</span></span>
+        <input type="text" name="fname" />
+      </label>
+      <label>
+        <span class="lname">Last Name <span class="required">*</span></span>
+        <input type="text" name="lname" />
+      </label>
+
+      <label>
+        <span>Delivery Address <span class="required">*</span></span>
+        <input
+          type="text"
+          name="houseadd"
+          placeholder="House number and street name"
+          required
+        />
+      </label>
+
+      <label>
+        <span>Phone <span class="required">*</span></span>
+        <input type="tel" name="city" />
+      </label>
+      <p>
+        <a class="ship" routerLink="/shipping">Shipping Fee</a>
+      </p>
+      <!--<button type="button" (click)="share()"><a> Order Now </a></button>-->
+      <button class="button" (click)="share()"><a>Checkout</a></button>
+    </form>
+  </div>
+</div>
